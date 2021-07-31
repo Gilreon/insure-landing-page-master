@@ -33,6 +33,7 @@ h1, h2 {
     line-height: 1;
     position: relative;
     padding-top: 50px;
+    margin: 0;
 
 }
 
@@ -72,6 +73,7 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
+    letter-spacing: 2px;
 }
 
 .btn-opposite {
@@ -124,6 +126,11 @@ nav .hamburger {
 
 }
 
+nav .hamburger:focus {
+    outline: none;
+
+}
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -133,7 +140,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 25px;
+    margin-left: 30px;
 
 }
 
@@ -148,7 +155,7 @@ nav li a {
 header {
 background-color: var(--dark-violet);
 color: #fff;
-padding: 50px;
+padding: 50px 0;
 position: relative;
 margin-top: 80px;
 margin-bottom: 250px;
@@ -176,7 +183,7 @@ header::before {
     content: '';
     background-image: url('images/bg-pattern-intro-left-desktop.svg');
     position: absolute;
-    bottom: -70%;
+    bottom: -55%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -206,7 +213,6 @@ header::before {
 .bg-violet h2 {
    color: white;
     padding: 0;
-    width: 75%;
     font-size: 3em;
     width: 60%;
 
@@ -263,9 +269,10 @@ footer li a {
 }
 
 @media screen and (max-width: 768px) {
+    
     body {
         text-align: center;
-
+      
     }
 
     .flex {
@@ -274,15 +281,10 @@ footer li a {
     }
 
     nav {
-        background-color: white;
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100vw;
-        z-index: 100;
         padding: 20px 0;
     
     }
+
     
 
     nav .hamburger {
